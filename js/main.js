@@ -11,6 +11,16 @@ const heroImages = [
 
 ];
 
+// Mobile nav toggle
+const toggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+
+
 let current = 0;
 
 function changeHeroBackground() {

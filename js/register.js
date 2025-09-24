@@ -11,3 +11,11 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).classList.add("active");
   evt.currentTarget.classList.add("active");
 }
+
+// Mobile nav toggle
+const toggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});

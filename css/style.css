@@ -31,6 +31,32 @@ a {
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
+
 
 .logo {
   font-weight: 600;
@@ -244,16 +270,46 @@ footer {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+/* --- Mobile Nav --- */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
+  .nav-toggle {
+    display: block;
   }
-  .hero p {
-    font-size: 1rem;
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;        /* or your preferred color */
+    position: absolute;
+    top: 60px;               /* height of navbar */
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  
   .navbar {
     padding: 15px 20px;
   }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.8rem; }
+  .hero p  { font-size: 0.9rem; }
 }
 
 /* ====== About Page ====== */
@@ -265,13 +321,29 @@ body.about-page {
   */
 }
 
+
 .about-hero {
   background: url('../images/clearcow.jpg') center/cover no-repeat;
   height: 60vh;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 0;
+}
+.btnp{
+   background: #e6f2e6;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+.btnp:hover{
+  background: skyblue;
 }
 
 .about-section {
@@ -489,6 +561,19 @@ form select {
   border-radius: 6px;
   margin-top: 5px;
 }
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.checkbox-group label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 form select[multiple] {
   height: 100px;

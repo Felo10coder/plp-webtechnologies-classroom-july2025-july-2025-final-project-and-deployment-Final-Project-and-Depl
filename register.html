@@ -12,11 +12,12 @@
   <header>
     <nav class="navbar">
       <div class="logo"><a href="index.html">FreshDairy Farm</a></div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about_products.html">About & Products</a></li>
-        <li><a href="register.html" class="active">Register</a></li>
-      </ul>
+     <button class="nav-toggle" aria-label="open menu">&#9776;</button>
+              <ul class="nav-links">
+               <li><a href="index.html" >Home</a></li>
+               <li><a href="about_products.html">About & Products</a></li>
+               <li><a href="register.html" class="active">Register & Order</a></li>
+                </ul>
     </nav>
   </header>
 
@@ -48,12 +49,13 @@
           <input type="tel" id="cphone" name="cphone" required>
 
           <label for="cproduct">Preferred Dairy Products</label>
-          <select id="cproduct" name="cproduct" multiple required>
-            <option>Fresh Milk</option>
-            <option>Yoghurt</option>
-            <option>Cheese</option>
-            <option>Butter</option>
-          </select>
+          <div class="checkbox-group" id="cproduct">
+            <label><input type="checkbox" name="cproduct[]" value="Fresh Milk" required> Fresh Milk</label>
+            <label><input type="checkbox" name="cproduct[]" value="Yoghurt"> Yoghurt</label>
+            <label><input type="checkbox" name="cproduct[]" value="Cheese"> Cheese</label>
+            <label><input type="checkbox" name="cproduct[]" value="Butter"> Butter</label>
+          </div>
+
 
           <button type="submit" class="btn">Register as Customer</button>
         </form>
