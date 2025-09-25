@@ -133,3 +133,19 @@ VS Code will start a local server (e.g., http://127.0.0.1:5500/
 # <center>📄 Registration Page</center>
 ![Registration](images/screenshots/registration_page.PNG)
 
+## 👥 Authors <a name="authors"></a>
+
+🕵🏽‍♀️ **Felix Kwemoi Motonyi**
+
+- GitHub: [GitHub Profile](https://github.com/Felo10coder/git-and-github)
+- Twitter: [Twitter Handle](https://x.com/Felo109?t=QQ7Gv-Lj-t6EyLIxYaJFGg&s=09)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/felo10)
+- Medium: [Medium Profile]()
+- Email: [email](felixkwemoi7@gmail.com)
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+
