@@ -1,90 +1,135 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# Dairy Fresh Farm Website
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
-
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
-
----
-
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
-
-Before you write any code, take time to plan:
-
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
-
-**Goal:** Show intentional structure and user journey across the site.
+A responsive multi-page website for **FreshDairy Farm**, built with **HTML, CSS, and JavaScript**.  
+The site markets farm products, enables customer ordering, and allows farmers to register as milk suppliers.
 
 ---
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
-
-Using your plan, begin building:
-
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
-
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+## 🌐 Live Demo
+[https://dairyfresh.netlify.app/](https://dairyfresh.netlify.app/)
 
 ---
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+## 📁 Project Structure
 
-Before deployment, refactor your project to follow production-friendly practices:
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+```text
+├── index.html              # Home page
+├── about_products.html     # About Us + Products page
+├── register.html           # Customer & Farmer registration
+├── css/
+│   └── style.css           # Global styles (responsive)
+├── js/
+│   └── main.js 
+|   |___ register.js        # Mobile nav toggle & small interactions
+└── images/                 # Site images (cows, products, etc.)
+```
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
-
----
-
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
-
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
 
 ---
 
-## Deliverables
+## ✨ Features
+- **Responsive Design**  
+  - Mobile-friendly navigation with a hamburger menu toggle.  
+  - Layouts adjust seamlessly across phones, tablets, and desktops.
 
-1. A GitHub repository containing:
+- **Customer Registration**  
+  - Form for name, contact details, location, and product selection using checkbox multi-select.
 
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+- **Farmer Registration**  
+  - Farmers input milk delivery capacity and price per liter.
+
+- **Products Showcase**  
+  - Displays fresh dairy products and the farm’s cows.
+
+- **Mission & Vision**  
+  - Highlights the farm’s story and long-term goals.
+
+- **Subscription Form**  
+  - Users can subscribe for updates and offers.
 
 ---
 
-## Outcome
+## 🚀 Deployment
+Deployed using **Netlify** with **GitHub Continuous Deployment**:  
+Push changes to the GitHub repository → Netlify automatically rebuilds and updates the live site.
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+---
+
+## 💻 Technologies
+- **HTML5** – page structure and content  
+- **CSS3** – styling, Flexbox layout, media queries for responsiveness  
+- **JavaScript (ES6)** – navigation toggle and interactivity  
+- **Netlify** – hosting and automatic deployment
+
+---
+
+## 🔧 Local Development
+To run the project locally:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Felo10coder/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
+
+2. Open a Terminal / Command Prompt
+
+   Navigate to the location where you cloned the repo:
+      Example:
+         cd plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl
+
+
+3. Open index.html directly in a browser, or use a live server extension in VS Code.
+
+4. Open the Site Locally
+
+You have two options:
+
+👉 Option A: Open directly in a browser
+
+      On Windows:
+
+         start index.html
+
+
+
+      On macOS:
+
+        open index.html
+
+
+
+      On Linux:
+
+         xdg-open index.html
+
+
+      This will launch your default browser with the homepage.
+
+👉 Option B: Use VS Code Live Server (recommended)
+
+      Open VS Code:
+
+         code .
+
+
+      Install the Live Server extension (if not already installed).
+
+Right-click on index.html → Open with Live Server.
+VS Code will start a local server (e.g., http://127.0.0.1:5500/
+) and automatically refresh when you edit files.
+---
+----
+
+# <u> Screenshots </u>
+
+# <center>🏠 Homepage </center>
+![Homepage](images/screenshots/home_page.PNG)
+
+![Homepage](images/screenshots/why_choose.PNG)
+
+# <center>About&Products Page</center>
+![About&Products](images/screenshots/vision.PNG)
+![About&Products](images/screenshots/products.PNG)
+
+# <center>📄 Registration Page</center>
+![Registration](images/screenshots/registration_page.PNG)
+
